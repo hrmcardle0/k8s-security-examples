@@ -1,0 +1,12 @@
+# Save this as pod-root.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pod-root
+  namespace: secure-namespace
+spec:
+  securityContext:
+    runAsUser: 0  # Running as root, which violates the restricted profile
+  containers:
+  - name: nginx
+    image: nginx

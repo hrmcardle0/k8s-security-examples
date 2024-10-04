@@ -1,3 +1,6 @@
 [submodule "Audit/kubebench/kube-bench"]
 	path = Audit/kubebench/kube-bench
 	url = https://www.github.com/aquasecurity/kube-bench
+[submodule "Audit/kubeaudit/kubeaudit"]
+	path = Audit/kubeaudit/kubeaudit
+	url = https://github.com/Shopify/kubeaudit
