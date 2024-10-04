@@ -1,6 +1,6 @@
-# Kind
+# kind
 
-Kind is a local K8s environment that runs on top of docker, allowing the testing of K8s resources on your local machine. 
+kind is a local K8s environment that runs on top of docker, allowing the testing of K8s resources on your local machine. 
 
 For detailed instructions, visit the [official Kind documentation](https://kind.sigs.k8s.io/docs/user/quick-start/#installation).
 
