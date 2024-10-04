@@ -19,12 +19,12 @@ The folder structure will be implemented as follows:
 
     .
     ├── Network/                        # high level category
-    │   └── NetworkPolicy/             # one complete implementation component
+    │   └── NetworkPolicy/              # one complete implementation component
     │       ├── (various yaml files)    # yaml configuration files to directly apply to k8s cluster
     │       └── README.md               # details, links to documentation and instructions for implelmenting
     ├── Kind/                           # Kind cluster configuration
     |   ├── kind.yaml
-    |   └── bootstrap-*.sh                # bootstrap Kind cluster
+    |   └── bootstrap-*.sh              # bootstrap Kind cluster
     └── README.md
 
 
