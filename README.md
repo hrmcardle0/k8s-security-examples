@@ -24,7 +24,7 @@ The folder structure will be implemented as follows:
     │       └── README.md               # details, links to documentation and instructions for implelmenting
     ├── Kind/                           # Kind cluster configuration
     |   ├── kind.yaml
-    |   └── bootstrap.sh                # bootstrap Kind cluster
+    |   └── bootstrap-*.sh                # bootstrap Kind cluster
     └── README.md
 
 
