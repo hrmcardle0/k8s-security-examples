@@ -16,6 +16,8 @@ For more information, visit the the [Official Kubernetes Documentation](https://
 
 `ingress.yaml` - ingress pod
 
+`calico-example.yaml` - example of a Calico network policy
+
 ## Usage
 
 Apply this example by first applying the `default-deny-all` policy. This will block all traffic within the cluster, and should be the default when standing up new clusters. This allows you to build your allow rules with a default-deny backing any traffic now allowed.

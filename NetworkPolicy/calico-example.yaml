@@ -1,0 +1,18 @@
+apiVersion: crd.projectcalico.org/v1
+kind: NetworkPolicy
+metadata:
+  name: block-traffic-between-apps
+  namespace: default  # Make sure to specify the correct namespace where the pods are running
+spec:
+  selector: app in {'myapp1', 'myapp2'}  # Applies to both myapp1 and myapp2
+  types:
+    - Ingress
+    - Egress
+  ingress:
+    - action: Deny
+      source:
+        selector: app in {'myapp1', 'myapp2'}  # Block traffic from each other
+  egress:
+    - action: Deny
+      destination:
+        selector: app in {'myapp1', 'myapp2'}  # Block traffic to each other
