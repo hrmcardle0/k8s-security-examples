@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp1
+  labels:
+    app: myapp1
+spec:
+  hostPID: true
+  containers:
+  - name: myapp1
+    image: ubuntu:latest
+    ports:
+    - containerPort: 8088
+    command: ["tail"]
+    args: ["-f", "/dev/null"]
+    # apply apparmor profile that restricts pod from creating files
+    securityContext:
+      allowPrivilegeEscalation: false
+  
